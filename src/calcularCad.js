@@ -1,5 +1,9 @@
 function cadena(palabra){
-    return 0;
+    var num = parseInt(palabra);
+    if(palabra == ""){
+        num=0;
+    }
+    return num;
 }
 
 export default cadena;
