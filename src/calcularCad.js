@@ -1,12 +1,14 @@
 function cadena(palabra){
     var num = parseInt(palabra);
-    const long = palabra.length;
+    var long = palabra.length;
     var sum=0;
 
-    for(var i=0;i<long;i++){
-        sum = parseInt(palabra)+sum;
+    for(var i=0;i<=long;i++){
+        if( i%2 === 0){
+            sum = parseInt(palabra[i])+sum;
+        }
     }
-
+    
     num=sum;
 
     if(palabra == ""){
