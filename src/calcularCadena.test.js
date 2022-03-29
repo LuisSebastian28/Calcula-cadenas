@@ -9,8 +9,16 @@ describe("Cadena", () => {
         const string = "2";
         expect(cadena(string)).toEqual(2);
     });
-    it("cadena con dos numeros 1,2 devuelve 3", () => {
+    it("cadena con dos numeros 6,7 devuelve 13", () => {
         const string = "6,7";
         expect(cadena(string)).toEqual(13);
+    });
+    it("cadena con dos numeros 1,2,3 devuelve 6", () => {
+        const string = "1,2,3";
+        expect(cadena(string)).toEqual(6);
+    });
+    it("cadena con tres numeros 1-2,3 devuelve 6", () => {
+        const string = "1-2,3";
+        expect(cadena(string)).toEqual(6);
     });
   });
