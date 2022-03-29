@@ -1,6 +1,7 @@
+
 function cadena(cadena){
+    let expReg = /\d/g; 
     var num=0;
-    var aux="";
     if(cadena == ""){
         num=0;
     }
@@ -10,7 +11,7 @@ function cadena(cadena){
 
     if(cadena.length>1){
         for(var i=0;i<cadena.length;i++){
-            if((cadena[i]!=",")&&(cadena[i]!="-")){
+            if(expReg.test(cadena[i])){
                 num=num+parseInt(cadena[i]);
             }
         }

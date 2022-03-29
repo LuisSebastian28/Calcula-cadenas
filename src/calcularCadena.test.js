@@ -21,4 +21,9 @@ describe("Cadena", () => {
         const string = "1-2,3";
         expect(cadena(string)).toEqual(6);
     });
+
+    it("cadena con tres numeros //[;]6;7;4 devuelve 17", () => {
+        const string = "//[;]6;7;4";
+        expect(cadena(string)).toEqual(17);
+    });
   });
