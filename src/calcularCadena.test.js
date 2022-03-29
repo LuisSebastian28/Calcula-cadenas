@@ -10,7 +10,7 @@ describe("Cadena", () => {
         expect(cadena(string)).toEqual(2);
     });
     it("cadena con dos numeros 1,2 devuelve 3", () => {
-        const string = "1,2";
-        expect(cadena(string)).toEqual(3);
+        const string = "6,7";
+        expect(cadena(string)).toEqual(13);
     });
   });
